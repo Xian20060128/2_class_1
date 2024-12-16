@@ -44,5 +44,5 @@ void Course::display() const
 {
 	cout << "課程代碼: " << courseId << endl;
 	cout << "課程名稱: " << courseName << endl;
-	cout << "課程描述: " << courseDescription << endl;
+	cout << "課程敘述: " << courseDescription << endl;
 }

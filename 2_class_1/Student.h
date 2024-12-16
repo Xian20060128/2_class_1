@@ -12,6 +12,7 @@ private:
 public:
 	Student(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthDate, const string& studentId, Department department, ClassName className);
 
+
 	string getStudentId() const;
 	Department getDepartment() const;
 	ClassName getClassName() const;
