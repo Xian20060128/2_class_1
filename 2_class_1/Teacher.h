@@ -9,10 +9,10 @@ using namespace std;
 class Teacher : public Person
 {
 private:
-	string teacherId; // 教師編號
-	Department department; // 教師所屬系所
-	ClassName className; // 教師所授班級
-	vector<Course> teachingCourses; // 教師所授課程
+	string teacherId; 
+	Department department; 
+	ClassName className; 
+	vector<Course> teachingCourses; 
 
 public:
 	Teacher(const string& id, const string& lastName, const string& firstName, const string& gender, const string birthDate, const string& teacherId, Department department, ClassName, const vector<Course>& courses);
