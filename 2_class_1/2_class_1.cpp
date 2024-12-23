@@ -227,7 +227,6 @@ void queryTeacher()
 	system("pause");
 }
 
-
 /*void queryRecord()
 {
 	string recordId;
