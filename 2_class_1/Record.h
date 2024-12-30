@@ -8,7 +8,7 @@ class Record
 {
 private:
 	static int nextId;
-	int recordId; // 靜態變數，用於紀錄選課的流水號
+	int recordId; 
 	string studentId;
 	string courseId;
 	time_t recordDate;

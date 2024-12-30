@@ -28,7 +28,7 @@ string Record::getRecordDate() const
 	char buffer[20];
 	struct tm timeinfo;
 	localtime_s(&timeinfo, &recordDate);
-	strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", &timeinfo);
+	strftime(buffer, sizeof(buffer), "%Y-%m-%d", &timeinfo);
 	return string(buffer);
 }
 
