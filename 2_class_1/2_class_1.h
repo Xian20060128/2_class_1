@@ -12,6 +12,7 @@ void queryTeacher();
 void queryRecord();
 void addStudent();
 void addTeacher();
+void addRecord();
 void deleteStudent();
 void deleteCourse();
 void deleteTeacher();

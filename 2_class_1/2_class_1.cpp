@@ -134,8 +134,7 @@ void displayMenu() {
 			system("pause");
 			break;
 		case 12:
-			cout << "新增選課紀錄" << endl;
-			addCourse();
+			addRecord();
 			system("pause");
 			break;
 		case 13:
@@ -381,6 +380,16 @@ void addTeacher()
 	cin >> classNameChoice;
 	ClassName className = static_cast<ClassName>(classNameChoice);
 	teachers.push_back(Teacher(id, lastName, firstName, gender, birthDate,teacherId, static_cast<Department>(departmentChoice), static_cast<ClassName>(classNameChoice),{}));
+}
+void addRecord()
+{
+	string studentId, courseId;
+	cout << "請輸入學號: ";
+	cin >> studentId;
+	cout << "請輸入課程編號: ";
+	cin >> courseId;
+
+	records.push_back(Record(studentId, courseId));
 }
 
 void deleteStudent()
