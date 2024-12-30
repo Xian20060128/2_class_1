@@ -101,6 +101,7 @@ void displayMenu() {
 		case 5:
 			cout << "查詢學生資料" << endl;
 			queryStudent();
+			system("pause");
 			break;
 		case 6:
 			cout << "查詢課程資料" << endl;
@@ -134,6 +135,7 @@ void displayMenu() {
 			break;
 		case 12:
 			cout << "新增選課紀錄" << endl;
+			addCourse();
 			system("pause");
 			break;
 		case 13:
@@ -378,7 +380,7 @@ void addTeacher()
 	cout << "請選擇教師所授班級: ";
 	cin >> classNameChoice;
 	ClassName className = static_cast<ClassName>(classNameChoice);
-	teachers.push_back(Teacher(id, lastName, firstName, gender, birthDate,teacherId, static_cast<Department>(departmentChoice), static_cast<ClassName>(classNameChoice), {}));
+	teachers.push_back(Teacher(id, lastName, firstName, gender, birthDate,teacherId, static_cast<Department>(departmentChoice), static_cast<ClassName>(classNameChoice),{}));
 }
 
 void deleteStudent()
